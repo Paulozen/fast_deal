@@ -1,3 +1,4 @@
+import 'package:fast_deal/view/productpage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -75,6 +76,13 @@ class _FavoritePageState extends State<FavoritePage> {
   ) {
     return Padding(
       padding: EdgeInsets.only(bottom: 25.0),
+      child:GestureDetector(
+      onTap: () {
+      Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const ProductPage()),
+      );
+      },
       child: Container(
         width: 380,
         height: 200,
@@ -158,6 +166,6 @@ class _FavoritePageState extends State<FavoritePage> {
                   offset: Offset(0, 4))
             ]),
       ),
-    );
+    ));
   }
 }

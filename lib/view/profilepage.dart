@@ -153,7 +153,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                     padding:
                                         EdgeInsets.only(top: 17.0, left: 15.0),
                                     child: Text(
-                                      'Anúncios Favoritados',
+                                      'Anúncios \nFavoritados',
                                       style: GoogleFonts.poppins(
                                         textStyle: TextStyle(
                                             color: Colors.black,
